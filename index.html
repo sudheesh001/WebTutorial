@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorials on the web.">
+
+    <title>Web Tutorials | Blog</title>
+    <link rel="stylesheet" href="highlight/styles/default.css">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+        <script src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+    <div id="layout">
+            <!-- Menu toggle -->
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+
+            <div id="menu">
+                <div class="pure-menu pure-menu-open">
+                    <a class="pure-menu-heading" href="#">Tutorials</a>
+
+                    <ul>
+                        <li class="menu-item-divided pure-menu-selected"><a href="#">Home</a></li>
+                        <li><a href="#day1">Day 1</a></li>
+                        <li><a href="#day2">Day 2</a></li>
+                        <li><a href="#day3">Day 3</a></li>
+                        <li><a href="#day4">Day 4</a></li>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="header">
+                    <h1>The Web Guru</h1>
+                    <h2>Tutorials for HTML,CSS,JavaScript.</h2>
+                </div>
+
+                <div class="content">
+                    <!-- Every Article -->
+                    <h2 class="content-subhead" id="day1">Day 1 - Hello and Welcome</h2>
+                    <code class=" hljs xml">
+                        &lt;html&gt;<br>
+                        &lt;title&gt;Welcome&lt;/title&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                    <p style="text-align:justify;">
+                        We'll be beginning DAY 1. Welcome to learning about the web and the internet. The first few topics might be a bit theoretical and I'll try to skip fast while keeping in mind that you get these basics about the Internet. There are common misconceptions about the Internet that'd be cleared. Also sometimes in between, I'd be marking portions of code segment as above, and explaining it. Pay careful attention in these areas. At the same time, in the middle of the blogposts, since I love diverting off, I might throw in a few advanced topics which might seem interesting in the flow.
+                    </p>
+                    <hr>
+                    <!-- Every Article End -->
+                    <!-- Every Article -->
+                    <h2 class="content-subhead" id="day2">Day 2 - Introduction to the WEB.</h2>
+                    <p style="text-align:justify;">
+                        Well, we have computers and we have the internet because of which you are able to see this post. So let me start off with the most obvious start to the topic. What is the internet ? Well, the internet is an interconnected network of computers, that's all you have to be knowing as of now. I'll skip all the boring information, you can always catch up with that information <a href="http://en.wikipedia.org/wiki/Internet" target="_blank">here.</a>
+                    </p>
+                    <p style="text-align:justify;">So how does the internet work ? What is so special about the internet ? What really happens in the internet ? What is the exact meaning of <code>https://www.google.com/</code> ? <br> Well before we answer all the above questions, lets have a look at a few basics of computers and the web technology as a whole. To do the web development, you don't really need to be knowing who created it first and all as of now, but if you're interested, you can always Google it up. <br>
+                    So, we all know what the URL Bar of a browser is, I'll be using Firefox to be showing you the demos.<br></p>
+                    <img src="http://1.bp.blogspot.com/-ICFAW5tOTpA/UZRZ1ugfiFI/AAAAAAAAAGo/1_aAskDH4hc/s640/urlbar.JPG" alt="URL Bar Image Loading">
+                    <p style="text-align:justify;">What we type out in the URL(Uniform Resource Locator) bar is called a client query. There are two things here, whats a client and whats a server ? A client is a computer that requests information from another computer. A server is a computer that provides you with the information. So think about it ... Can a client be a server ? Can a server be a client ?</p>
+                    <p style="text-align:justify;">So, what happens when we do a query for Google's homepage. the typed <code>www.google.com</code> gets converted to an IP address, something like <code>74.125.236.179</code></p>
+                    <img src="3.bp.blogspot.com/-gO96yAli6Js/UZRlISjFnTI/AAAAAAAAAG4/Ma42GjPwK6c/s1600/ipaddress.JPG" alt="IP Address Image Loading">
+                    <p style="text-align:justify;">This number differs based on your closest Google server and their server load, i.e. simultaneous number of people requesting the same page, so instead of typing in www.google.com, if you type in 74.125.236.179 , it'll still take you to the google homepage. This is because the URL is a human readable format of these numbers and each of these names is called a 'Domain Name'. There is a system of naming called DNS which doesn't allow the same name to be taken over, so you can't register your website over an already registered domain name, like google.com. Getting back to where we were, as you type the domain name, it gets converted to an IP address which is computer understandable, this then asks the root servers (the main servers which keep a list of domain names and their connecting numbers), it receives an IP address corresponding to its query. So the computer then calls this computer, this computer(server) then understands the call and sends back the required files to be shown. The medium which makes this connections possible and content viewable are the internet browsers like Firefox, Safari, Internet Explorer.</p>
+                    <p style="text-align:justify;">For those interested in how this connections take place and processes involved, look at a more advanced thing called layers, the approximate working is denoted by something called an OSI Model. Starting from </p>
+                        <p style="text-align:justify;"><code>Application layer <br> Presentation layer <br> Session layer <br> Transport layer <br> Network layer <br> Data Link <br> Physical layer.</code><br></p>
+                    <p style="text-align:justify;">So feel free to know more about it and don't worry if it seems a bit complex to understand. You can always ask in the comments/send a mail if you have any queries.</p>
+                    <table class="pure-table pure-table-bordered" style="align:center;">
+                        <thead>
+                            <tr>
+                                <th>Web Technology</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>1991</td>
+                            </tr>
+                            <tr>
+                                <td>HTML2</td>
+                                <td>1995</td>
+                            </tr>
+                            <tr>
+                                <td>CSS1 + JavaScript</td>
+                                <td>1996</td>
+                            </tr>
+                            <tr>
+                                <td>HTML4</td>
+                                <td>1997</td>
+                            </tr>
+                            <tr>
+                                <td>CSS2</td>
+                                <td>1998</td>
+                            </tr>
+                            <tr>
+                                <td>XHTML1.0</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>Table Less Design</td>
+                                <td>2002</td>
+                            </tr>
+                            <tr>
+                                <td>AJAX</td>
+                                <td>2005</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>2009</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!-- Every Article End -->
+                    <!-- Every Article -->
+                    <h2 class="content-subhead" id="day3">Day 3 - Beginning HTML</h2>
+                    <p style="text-align:justify;">
+                       Hyper Text Markup Language is a scripting language that allows one to create webpages. A website is a collection of such webpages marked in an even orderly fashion. It is written in the form of tags which start with angle brackets around the tag word. eg. <code>&lt;p&gt; , &lt;a&gt; </code> and the ending of that portion is referred with a <code> &lt;/a&gt; </code> and a <code> &lt;/p&gt; </code>. The slash used is a forward slash '/' and not a backward slash '\'. Be careful about it.
+                    </p>
+                    <p style="text-align:justify;">The purpose of a web browser, as discussed is to bring in the webpages from a remote computer (server). HTML5 allows you to put images, audio and video. But firstly before we make a website, we need to know a little more technical details as to how a website is delivered to the user and why on request of a webpage only the homepage is retrieved ? Why not any other page ? For eg. if we go to www.yahoo.com, we see the homepage but not any other page like yahoo groups or something, though all these pages like Yahoo Finance and Yahoo Groups and so on is still there. This happens because of the existance of a page called index.html also called the landing page. Out of all the files on the server, the web browser retrieves this page first when you make the query. So now you guys know how to save your homepage. <br><br>So then, what is HTML5 ? <br>
+                        Easily put, HTML5 = HTML + CSS (Cascading Style Sheets) + JS (JavaScript)
+                    </p>
+                    <p style="text-align:justify;">We'll get to CSS and JS later on as we progress. So don't worry about these two as of now, but just know that something like this exists and is important.</p>
+                    <img src="http://petelepage.com/blog/wp-content/uploads/2011/11/gela1.png" alt="">
+
+                    <p style="text-align:justify;">HTML5 is a major revision of HTML, XHTML and HTML DOM. It includes everything you see in your browser, such as text, images, multimedia, web apps, search forms and so on. It has a much more simplified doctype and is easy to understand. But wait, whats a doctype ? You might have figured it out by now, its document type, something that tells the browser what kind of a document it is, if its an HTML1 file for a HTML4 file or an HTML5 file.</p>
+                    <p style="text-align:justify;"> So the HTML documents which were previously written before 2009 were mentioned this way so that the browser could understand what exactly to be using.<br>This says that the HTML document is of HTML4.01 written in ENglish and using Strict usage from W3C's rules and regulations. W3C as its generally referred is World Wide Web Consortium is an organization that sets standards for the World Wide Web.</p>
+                    <p style="text-align:justify;">
+                        <code class="hljs xml">
+                         &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+                         "http://www.w3.org/TR/html4/strict.dtd"&gt;
+                        <br>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd"&gt;
+                        <br>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+                        <br>
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+                        <br>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+                        <br>
+This says that the document retrieved is of HTML5 , Simple enough ?<br>
+<strong>&lt;!DOCTYPE HTML&gt;</strong>
+                        <br>
+                        </code>
+                    </p>
+                    <p style="text-align:justify;">So lets do an exercise as of now, Take any website of your choice and find out which type of HTML is used in making the website, For this you have to open the source of that particular webpage, so on your firefox browser, go to a website, for example, i'll be taking facebook.com. Go to the page, right click on it and select the option <strong>view source.</strong></p>
+                    <p style="text-align:justify;"> This will give you a scary screen with code everywhere, something like this.</p>
+                    <img src="http://3.bp.blogspot.com/-6Ks5cCctzlc/UZciW-B30FI/AAAAAAAAAHI/JUUlaCcBQwo/s640/Source.png" alt="">
+                    <p style="text-align:justify;"> All you have to be doing is then look at line 1 and figure it out. So, to end it for the day, Misconceptions about HTML5 are:</p>
+                    <ul style="text-align:justify;">
+                        <li>HTML is a programming language</li>
+                        <ul>
+                            <li><strong>Answer:</strong> No, It is NOT a programming language. Its a scripting language and aids programming.</li>
+                        </ul>
+                        <li>Its a substitute to Flash.</li>
+                        <ul>
+                            <li><strong>Answer:</strong> HTML5 does offer audio and video support but with certain limitations. This Flash based website had almost 800 mp3 files; making it a large scale application. The problem lies in the fact that while Mozilla supports .ogg format and chrome/safari supports the .mp3 format, so if the user’s preferred browser is IE8, the Flash Audio Player becomes a necessity. Limited Extensions available on HTML5 mean that the only solution is to convert all audio files into two formats — mp3 and ogg/wave. To convert 800 files into two file formats isn’t just a time consuming process but also increases server storage. We'll get back to file formats soon.</li>
+                        </ul>
+                        <li>HTML5 can handle all sorts of animations.</li>
+                        <ul>
+                            <li><strong>
+    Answer: </strong>No, Not yet. Its ability for 3D animations and running multiple animations is severely limited.
+</li>
+                        </ul>
+                    </ul>
+                    <p style="text-align:justify;">Now that you know what HTML5 cannot do, Lets have a look at what it CAN do.
+                    <ul style="text-align:justify;">
+                        <li>A single application can be created that works on iPad, Windows 8, iPhone etc..,</li>
+                        <li>Develop a website that can work on tablets, phones and desktop browsers.</li>
+                        <li>Improved website performance and speed.</li>
+                        <li>Quicker load time because of implementation of Web Sockets. (don't worry about this)</li>
+                        <li>Provides appropriate built in validation.</li>
+                    </ul>
+                    </p>
+                    <p style="text-align:justify;">So thats for day 3, Experiment.</p>
+                    <hr>
+                    <!-- Every Article -->
+                    <h2 class="content-subhead" id="day4">Day 4 - Beginning Writing the code</h2>
+                    <p style="text-align:justify;">So, after a few theoretical concepts tackled, lets get to actual work. Building the web. So to write the code, we need something called an HTML editor, generally all Text Editors like Notepad, which comes built in into your Windows operating system, and gedit which comes with your Ubuntu Linux and VI text editor in your Fedora Linux distributions. Well these simple looking notepad type applications can really help build the web and are called Basic text editors, the best part is that they are built in.</p>
+                    <p style="text-align:justify;"><strong>So are there any other editors and software for web development ?</strong></p>
+                    <p style="text-align:justify;">Yes these are called source text editors, there are some editors which support many programming and scripting languages and come in three ways. Freeware, Opensource and Proprietary software. What exactly is the difference ?</p>
+                    <p style="text-align:justify;">A freeware is a type of computer software that is given completely for free for lifetime usage. eg.HTMLKit. An Open source software is a freeware but the complete source code which is used to make the software is also provided. eg. Notepad++. A proprietary software mostly WYSIWYG software is something which one has to buy and use. eg. Adobe Dreamweaver, Microsoft Visual Studio Web Essentials.</p>
+                    <p style="text-align:justify;">So whats the big difference between these ? Advantages of a source text editor are</p>
+                    <ol>
+                        <li>Syntax highlighting.</li>
+                        <li>Templates (present in a few proprietary ones).</li>
+                        <li>Toolbars and Keyboard shortcuts.</li>
+                        <li>Automatic insertion and suggestion of HTML elements.</li>
+                        <li>Auto completion.</li>
+                    </ol>
+                    <p style="text-align:justify;">An HTML page that is created generally contains a Doctype, which defines the version of HTML used in the document. An HTML element may contain content like text, images, video, body, paragraphs and so on. An HTML element is a set of tags i.e open tag and close tag combination. such as the code as follows.</p>
+                    <code class="hljs xml">
+                        &lt;!DOCTYPE HTML&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;title&gt;My First Webpage&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;h1&gt;Webpage&lt;/h1&gt;<br>
+                        &lt;p&gt;This is a paragraph. So you can keep typing something here. the data between the start and end of this paragaph tag 'p' including the angle brackets is called an HTML element.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt; <br>
+                    </code>
+                    <p style="text-align:justify;">Type over the code present on top into your text editor and save it with a filename, say script.html onto your desktop. Note that the <code>.html</code> has to be put in as extension so that your default browser can take care of running this file. Then double click on it, and it'll open the browser running your program. Here my default is Firefox 21 and the execution of the above code gives this output on your screen.</p>
+                    <img src="http://1.bp.blogspot.com/-W10JF0-Vo4A/UZio58OadzI/AAAAAAAAAHY/jUiMHsly2d8/s640/codebasic1.JPG" alt="">
+                    <p style="text-align:justify;">So how is this working, </p>
+                    <ul>
+                        <li>The doctype line says that the document is written in HTML5</li>
+                        <li>The <code>&lt;html&gt;</code> tag says that this is the start of the HTML code and <code>&lt;/html&gt;</code>  marks the end of the HTML code.</li>
+                        <li>The  <code>&lt;title&gt;</code> My First Webpage  <code>&lt;/title&gt;</code> tag puts the content My First Webpage between the open and close tags on the title of the browser, In the above figure, the title is present in the tab that is open.</li>
+                        <li>The <code>&lt;h1&gt;</code> shows the heading size.</li>
+                        <li>The <code>&lt;p&gt;</code> paragraph tag shows how to specify a paragraph. The open and close tags specify one paragraph, to make a new paragraph, a new paragraph tag has to be created below the first paragraph tag.</li>
+                        <li>The <code>&lt;body&gt;</code> tags make sure that the information is put in the body of the browser.</li>
+                    </ul>
+                    <p style="text-align:justify;">A comment in a programming language or any scripting refers refers to program code that is not executed but is just there for making the life of other programmers who re-program your site easier. Have a look at the source of this webpage and look for something enclosed between</p>
+                    <p style="text-align:justify;">
+                        <code class="hljs xml">
+                            &lt;!-- Comment is placed here. What ever is in between this, will not be executed, meaning that this won't be visible on the webpage when you view it--&gt;
+                        </code>
+                    </p>
+                    <p style="text-align:justify;">
+                        We'll get back sometime to know where comments are really used when developing a website or a really long webpage.
+                        Do experiment with basic tags that you've learnt today. Also the homework, for you to think over is :
+                        <ul>
+                            <li>What happens if the HTML code has no DOCTYPE written in the code?</li>
+                            <li>What happens if you miss the <code>&lt;/h1&gt;</code> and run the code in the browser?</li>
+                            <li>What happens when you change the number in from 1 to something else like 2 or 3 or 4 ?</li>
+                            <li>What is the maximum number that it can go to ?</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="js/ui.js"></script>
+
+
+    </body>
+    </html>
