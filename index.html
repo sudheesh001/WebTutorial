@@ -36,6 +36,7 @@
                         <li><a href="#day2">Day 2</a></li>
                         <li><a href="#day3">Day 3</a></li>
                         <li><a href="#day4">Day 4</a></li>
+                        <li><a href="#day5">Day 5</a></li>
                 </div>
             </div>
 
@@ -185,6 +186,7 @@ This says that the document retrieved is of HTML5 , Simple enough ?<br>
                     </p>
                     <p style="text-align:justify;">So thats for day 3, Experiment.</p>
                     <hr>
+                    <!-- Every Article End -->
                     <!-- Every Article -->
                     <h2 class="content-subhead" id="day4">Day 4 - Beginning Writing the code</h2>
                     <p style="text-align:justify;">So, after a few theoretical concepts tackled, lets get to actual work. Building the web. So to write the code, we need something called an HTML editor, generally all Text Editors like Notepad, which comes built in into your Windows operating system, and gedit which comes with your Ubuntu Linux and VI text editor in your Fedora Linux distributions. Well these simple looking notepad type applications can really help build the web and are called Basic text editors, the best part is that they are built in.</p>
@@ -240,6 +242,115 @@ This says that the document retrieved is of HTML5 , Simple enough ?<br>
                         </ul>
                     </p>
                     <hr>
+                    <!-- Every Article End -->
+                    <!-- Every Article -->
+                    <h2 class="content-subhead" id="day5">Day 5 - More Code</h2>
+                    <p style="text-align:justify;">
+                        Before we begin today's post, I am really happy to inform you readers that we have another dedicated contributor contributing to the information of the blog from today and hence acting as a web mentor. Thank you Manoj Reddy for helping out. Parts of the following article have been written by Manoj, You can find him <a href="https://www.facebook.com/manoj.reddy.10">here</a>. So starting off with the good news, lets recollect what we learnt previously.
+                    </p>
+                    <p style="text-align:justify;">
+                        <ul>
+                            <li> HTML documents contains HTML tags and plain text. Tags are used to signal the browser that plain text written in between them need to be interpreted and displayed in a particular way. For example if a new paragraph text need to be displayed on web page, then we need to use the tag that indicates the start of paragraph. For this tag <code>&lt;p&gt;</code> is used and end of paragraph is denoted by end tag <code>&lt;/p&gt;</code>.</li>
+                            <li>A web browser initially finds the HTML version used to design the web page using <!DOCTYPE HTML> To know about DOCTYPE  you can see the previous article.</li>
+                            <li>Opening tags and closing tags come in pair like <code>&lt;p&gt; & &lt;/p&gt; , &lt;h1&gt; & &lt;/h1&gt;</code></li>
+                        </ul>
+                    </p>
+                    <p>So to design a web page we need to be familiar with regularly used tags. We will be discussing few of them today. What a web page consists of in  general are images, links, menu lists, headings , paragraphs, plain-text written in different styles .We will be discussing the tags used to define these elements.</p>
+                    <code class="hljs xml">
+                        &lt;!DOCTYPE HTML&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &lt;title&gt;My First Webpage&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;h1&gt;Heading1&lt;/h1&gt;<br>
+                        &lt;h2&gt; Heading2 &lt;/h2&gt;<br>
+                        &lt;h3&gt; Heading3&lt;/h3&gt;<br>
+                        &lt;p&gt;This is a paragraph. So you can keep typing something here. the data between the start and end of this paragraph tag 'p' including the angle brackets is called an HTML element.&lt;/p&gt;<br>
+                        &lt;p&gt; second paragraph goes here .                                           You can write second paragraph matter here&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                    <p>The web page has a title My First Webpage and the answer to the question that was previously asked, about changing the number in the tag &lt;h1&gt; results in the decreasing font size of these headings. &lt;h1&gt; being the maximum font size for heading and &lt;h6&gt; for the smallest font size. Try experimenting with them. When you run the program in the browser it gives you the following output.</p>
+                    <img src="http://3.bp.blogspot.com/-C6sBod31Zls/UZm01G7pm1I/AAAAAAAAAHo/xf_7qu_sQ3Q/s640/codebasic1.JPG.png" alt="">
+                    <p>So now, I am having a little crazy thought, I want to show largest font and to show smallest font. Is this possible ? Of course yes, We'll look into how the default font sizes can be changed when we will be doing CSS or Cascaded Style Sheets.
+                        <br><br>
+If you've observed in the code and the output produced, the second paragraph of the code has a really long space between both the sentences in the code but this is not shown on the browser. Disaster right ? Program is not working fine right ? So this brings another thing to know, HTML doesnot consider whitespace (space, backspace, tab) characters when doing the display, it just ignores it.
+<br><br>
+So two other things for you readers, think about these questions below</p>
+                    <p>
+                        <ol>
+                            <li>To consider them we need to specify browser not to ignore spaces. For this we need to include tag &lt;pre&gt; at the start of the second paragraph and &lt;/pre&gt; at the end of the paragraph. Now,observe the change in your browser.</li>
+                            <li>What happens when we use nested paragraph tags like this one <p>  is there any difference      Check the pattern you get in your browser.</li>
+                            <ul>
+                                <li>
+                                    <code class="hljs xml">
+                                        &lt;p&gt;some text here.&lt;p&gt;some text here.&lt;/p&gt;  what did you find? &lt;/p&gt;.
+                                    </code>
+                                </li>
+                            </ul>
+                        </ol>
+                    </p>
+                    <p>HTML is a language that is generally used to display data effectively to the user and that's why the design and formatting of a webpage is highly important since it appeals to the user's eye. So now lets look into formatting.</p>
+                    <code class="hljs xml">
+                        &lt;!DOCTYPE HTML&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;My First Webpage&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;b&gt; text is bold &lt;/b&gt;<br>
+&lt;br&gt;<br>
+&lt;i&gt; text is italic &lt;/i&gt;<br>
+&lt;br&gt;<br>
+&lt;hr&gt;<br>
+&lt;!-- Horizontal Line --&gt;<br>
+&lt;strong&gt; says text is strong.what is strong &lt;/stong&gt;<br>
+&lt;br&gt;<br>
+&lt;em&gt; almost same as italic right? &lt;/em&gt;<br>
+&lt;br&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+                    </code>
+                    <p>So what exactly are bold &lt;b&gt; , italic &lt;i&gt; , strong &lt;strong&gt; and emphasis &lt;em&gt;.</p>
+                    <img src="http://2.bp.blogspot.com/-3ic_4ij5VaA/UZm6VPseg8I/AAAAAAAAAII/4Jl3wngmq5I/s640/codebasic1.JPG" alt="">
+                    <p> Whatever is between the tag &lt;b&gt; and &lt;/b&gt; is used to display text as bold and tag &lt;i&gt; and &lt;/i&gt; used to display text as italic .To write text in next line we use break line tag &lt;br&gt;. This brings in the information to the next line, the more the line breaks you use, the more the number of lines below the information will be displayed. &lt;hr&gt; &lt;!-- Horizontal Line --&gt; As you can notice in the output, there is a horizontal line, this is obtained by the &lt;hr&gt; tag. Strong and bold tags both show the same output type and italic and emphasis also have the same italics, so why should one use strong in HTML5 instead of bold? Why should one use emphasis instead of italics?
+
+The reasons are as follows:</p>
+                    <ul>
+                        <li>&lt;strong&gt; &amp; &lt;em&gt; mean that you want the text to be presented on screen in such a way that the reader of your webpage understands that it is important.</li>
+                        <li>The &lt;strong&gt; &amp; &lt;em&gt; ymight not make a big difference to regular people but it helps the specially abled to use computers and the internet by using a feature that most neglect, Ease of Access in windows, Narrator in Mac, Text to Speech on Linux. When the webpage is read by this software, it emphasises on the text where it is important because some people can't see a computer but can hear it. This was an effort by Noriko Umeda which was then developed furthur. So we learn that when we design a website, we have to design it in such a way that every person using the internet can understand the contents no matter what the condition. Inspiring isn't it ?</li>
+                    </ul>
+                    <p> <strong>What is an HTML Attribute ?</strong><br>
+Attribute is modifier of HTML element. They are used to define the size of image, color of the text,back ground color of a table so on. It defines properties.</p>
+                    <p>
+                        <ul>
+    <li>Attributes provide Additonal Information about a particular tag.</li>
+    <li>It is always mentioned in the start tag.</li>
+    <li>Attribute names come in name or value pairs. (lets forget about this as of now)</li>
+</ul>
+                    </p>
+                    <p> So lets see how another common thing we see online, Links, are done. This is done with the help of the Anchor tag (&lt;a&gt; tag).</p>
+                    <code class="hljs xml">
+                        &lt;body&gt;<br>
+&lt;h1&gt; Example of re-direct link &lt;/h1&gt;<br>
+&lt;a href="http://www.gmail.com"&gt; Gmail &lt;/a&gt;<br>
+&lt;/body&gt;<br>
+                    </code>
+                    <p>lets see how this code works, the href="http://www.gmail.com" redirects the word Gmail on click to that particular website in the same tab of the browser. If you want it to open in a new window or new tab instead of opening in the same tab, you add a target="_blank" to open in a new tab, so the final code for the you to generally use is.
+<code class="hljs xml">
+&lt;a href="http://www.gmail.com" target="_blank"&gt; Gmail &lt;/a&gt;<br>
+&lt;a href="#" target=""&gt; Gmail &lt;/a&gt; <!-- There is no link here and a # targets you to the top of the page -->
+</code>
+                    </p>
+                    <img src="http://2.bp.blogspot.com/-yOeZJIKrYTQ/UZnBgDE39zI/AAAAAAAAAIY/nqenM9h2y4I/s640/codebasic1.JPG.png" alt="">
+                    <p>
+                     Clicking on the Gmail text will take you to Gmail, since Gmail is not located on your server you have to put http:// in the href for files that are already on your server, your href="/server/path/".
+
+In the next day's lesson we'll take care about how to make ordered lists (i.e. 1,2,3...) and un-ordered lists (bullets). So do experiment with whatever you've learnt and improve on the First Web Page replication work by putting a '#' in the links.
+</p>
+                    <hr>
+                    <!-- Every Article End -->                    
                 </div>
             </div>
         </div>
