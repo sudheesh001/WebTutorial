@@ -350,8 +350,138 @@ Attribute is modifier of HTML element. They are used to define the size of image
 In the next day's lesson we'll take care about how to make ordered lists (i.e. 1,2,3...) and un-ordered lists (bullets). So do experiment with whatever you've learnt and improve on the First Web Page replication work by putting a '#' in the links.
 </p>
                     <hr>
-                    <!-- Every Article End -->                    
+                    <!-- Every Article End --> 
+ <h2 class="content-subhead" id="day6">Day 6- The Journey of 'Data'</h2>
+                     <p style="text-align:justify;">So as you can imagine from the title, there won't be any 'code' today and it'll be mostly theoretical. Today we'll be discussing about how communication takes place between one computer and another, and how information is sent, in detail. This is the journey of data.</p>
+                     <br>
+                     <p style="text-align:justify;"> Every communication that happens between two computers happens with the help of 14 different layers with 7 layers layers on each computer. A layer can be compared to a real life situation of a train station. There are 7 layers in the OSI model (Open System Interconnect) model. The layers are in the following order in a computer.</p>
+               <br>
+               <ul>
+                    <li>Application layer.</li>
+                    <li>Presentation layer.</li>
+                    <li>Sessions layer.</li>
+                    <li>Transport layer.</li>
+                    <li>Network layer.</li>
+                    <li>Data link layer.</li>
+                    <li>Physical layer.</li>
+                </ul>
+                <br>
+                <p style="text-align:justify;">So lets analyze the journey of data from one computer to another. First <b>the application layer</b>acts as the window for application processes and users to access networks, compare it to your browser which is an application, the links you click on your screen are the data. Assume this to be the same as a train waiting at a train station, and the data is the cargo its transporting. The application layer packs the data and sends it to the presentation layer. So similarly, the cargo is packed into a train and the train is sent to the next station.</p>
+                <br>
+                <p style="text-align:justify;"><b>The Presentation Layer</b> acts as the translator to the network, it converts data from common readable format to a much well known network format for the computers, such as converting ASCII to EBCDIC. This is similar to making sure that the train driver knows the language of the place where he's going. This layer also provides data compression and data encryption. Encryption is the process of converting the data from a readable format to a more secure format using mathematical and logical equations. This was first done by Julius Caesar. Something that is plainly readable is called 'plain text' and something that is converted into secret code is called 'cipher text'. The process of converting plain text to cipher text is called Encryption and its reverse is called Decryption. The process and Encryption and Decryption together is called 'Cryptography' and is a very important factor to keep you safe online. Julius Caesar converted every document that has to be sent across a war to a +3 character set, so A becomes D, B becomes E and so on and X becomes A. The information that was being sent could never be read by the enemies in case the messenger got caught. Smart right ?</p>
+                <br>
+                <p style="text-align:justify;"><b>The Sessions Layer</b> is like the traffic police, it checks the data, and puts the safe to move or similar to a kind of police clearance. It's like a toll gate and remembers which train has left and which train has come, it doesn't allow other data to come and destroys it. It is a further layer of security. It keeps count of how long you're online without viewing a page and them times out that page for security reasons. This acts as what is mostly known as Firewall.</p>    
+                <br>
+                <p style="text-align:justify;"><b>The Transport Layer</b> ensures that the messages are delivered error free in sequence and with no losses or duplications. It relieves the higher layers discussed from any concern with the data. This is similar to a police check of the cargo on the train when its going. It tells the driver where to go with the cargo and its duty is to send the trains carrying the information in order. This layer can accept large messages but the layers to follow have message size requirements. The transport layer breaks the information into smaller <b>segments</b> and sends the information to the <b>Network Layer.</b></p>
+                <br>
+                <p style="text-align:justify;"><b></b>The Network Layer</b> converts the segments into <b>packets</b> similar to how the cargo on the train is distributed equally into smaller carriage cars. This layer is like a junction and it has all possible connections through which it sends the data through one particular track/path just like how trains can change path of movement at junction until they reach another junction. The source and destination of the data is added here to the message.</p>
+                <br>
+                <p style="text-align:justify;"The Data Link Layer provides error free transfer of packets to frames from one computer to another by placing a MAC (Media Access Control) Address to the frame, every computer has its own pre-defined and fixed MAC address on its NIC (Network Interface Card) which cannot be changed like an IP. This then gets converted to <b>bits</b> in the <b>Physical Layer</b> and these bits are sent across hardware medium like Ethernet cables, coaxial cables or optic fibre cables from one computer to another.</p>
+                <br>
+                <p style="text-align:justify;">All this takes place at one side (i.e. information senders), the same steps take place in the destination computer in the reverse direction from Physical layer to Data link layer all the way up to the Application layer. The information that was requested is then sent back from the destination computer through the same 7 steps as we discussed in application layer to physical layer order (since now it acts as sender) and at the receiving it goes back from bottom layer to top. To sum up everything so far here is an image.</p>
+                <a href="http://www.washington.edu/itconnect/learn/tools/"><img src="http://www.washington.edu/lst/help/computing_fundamentals/networking/img/osi_model.jpg" alt="The Web Guru"></a>   
+                <p style="text-align:justify;">So next time you click on a link, This is the long and fast journey the data has to take to send information, request information and retrieve information and show it on your screen. Complex isn't it ? Think about how complex it is to find the computer serving the information in the billions of computers and mobile devices we have in the world. Its worth spending some time thinking about and being amazed by the beauty of the internet.</p>
+                <hr>
+                    <!-- Every Article End -->
+                    <!-- Every Article -->
+                <h2 class="content-subhead" id="day7">Day 7- The Essence of a Web Page</h2>
+                <p style="text-align:justify;">So now that you've been through most of the basics, lets look at a few core HTML5 features, the audio and the video tags and their attributes.</p>
+                <br>
+                <p style="text-align:justify;"> The audio tag is used to place audio elements like songs, music portions etc., HTML5 supports 3 major formats , the .ogg format, the .mp3 format and the .wav format when it comes to audio files.</p>
+                <code class="hljs xml">
+                 &lt;audio controls&gt;<br>
+                 &lt;source src="song1.ogg" type="audio/ogg"&gt;<br>
+                 &lt;source src="song2.mp3" type="audio/mpeg"&gt;<br>
+                 &lt;source src="song3.wav" type="audio/wav"&gt;<br>
+                 Your browser does not support the audio tag.<br>
+                 &lt;/audio&gt;
+                 
+                </code>   
+                <p style="text-align:justify;"> Note that the extension of the filename (.ogg or .mp3) is very important and also the type of the file should also be mentioned as (audio/full file format). So how does this work ? This code looks for the specified file in the folder your program code (.html) document is, If the file is placed in the same folder, then the audio will play, other than this in the src="song1.ogg" you can also place a link to a particular audio file. The output of running the following code will give you a look like this. In case the files don't exist it'll display the line Your browser does not support the audio tag.</p>
+                <img src="http://1.bp.blogspot.com/-vyvl4hQ7Q8g/UZ3wxkwuI-I/AAAAAAAAAJo/fWSImSUYazY/s1600/audio.PNG" alt="Cannot display image">
+                <p style="text-align:justify;">From previous exercises you already know how to get place the image and recreate the webpage as shown.</p>
+                <br>
+                <p style="text-align:justify;">Another important thing in a webpage and an addition feature is the video tag.<br>Video too similar to audio supports three major formats, the .mp4 , .webm and .ogg formats. The <code>&lt;video&gt;</code> tag is new in HTML5. The usage of video tag is similar to that of the audio tag. Firstly have the .mp4 file in the folder in which you are writing the code, you can set the height and width of the video similar to that for an image, these are the video attributes. So here's the code to the Iron Man 2 movie, a file which i saved as movie.mp4 , The code running this in the browser is</p>
+                <code>
+                    &lt;video width="700" height="900" controls&gt;<br>
+                    &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                    &lt;/video&gt;
+                    </code>
+                    <img src="http://1.bp.blogspot.com/-ZpddbSsvQ_k/UZ30q6jJjsI/AAAAAAAAAJ4/cAiFDFj9wwY/s1600/video.PNG" alt="Cannot display">
+                    <p style="text-align:justify;"> I hope this is clear, Try experimenting more and make a really nice webpage by using everything we've studied so far. Tomorrow we'll be taking the web development furthur using a more advanced tool than Notepad, its called <a href="https://thimble.webmaker.org/en-US/" target="_blank">Mozilla Thimble</a>. I suggest everyone have their Persona ID's ready. Soon we'll be moving over to Cascaded Style Sheets.</p>
+                    <br>
+                    <br>
+                    <p>Happy Scripting.</p>
+                    <hr>
+                    <!--End of page-->
+                <h2 class="content-subhead" id="day8">Day 8-Introducing Style and Thimble. Welcoming Nightly</h2>
+                <p style="text-align:justify;">So before we go over to Style of a webpage, lets figure out what Thimble really is. Mozilla Thimble is a tool that makes it ridiculously easy and simple to make anything on the web. It lets you make your own webpages and host it for free all within a matter of minutes. Its moreover a learning tool and helps you sharpen your web skills. At the same time there is a more advanced interface for you to use which gives live preview of the code you are typing, So as you type the output of your code can be viewed automatically. These type of features are generally given in advanced and paid software like Adobe Dreamweaver and Microsoft Visual Studio 2012. So that's amazing right ? Lets begin.</p>
+                <img src="http://1.bp.blogspot.com/-eYC8GExMyd4/UZ9LjTR9DYI/AAAAAAAAAKI/ifVOf5rSkY8/s1600/Styles.PNG" alt="Cannot display image">
+                <br>
+                <p style="text-align:justify;">If you've noticed, From now on I'd be using Aurora to develop my webpages. It is important for you being a web developer that your webpage will have the same look on all browsers, so it's always good to have all the web browsers stacked up at the bottom pane in your Windows systems or in the Dock on your Linux or Mac systems. So the browsers in the image below starting from the left are Internet Explorer (IE) 9, Google Chrome, Firefox Nightly, Firefox Aurora, Firefox where my Chrome and Aurora are active for testing the scripts I write. So what is Firefox Aurora and Nightly ? Aurora is the pre-beta version of Firefox and Nightly is the Firefox which has the absolute latest changes, and are considered unstable. They are the most buggy, and will result in a higher crash count than stable Firefox Releases. They are to be used for seeking bugs, and then submitting them to Mozilla developers, so that the Beta and Release channels do not suffer from such bugs. So those of you who want to try out these browsers, Go ahead and download them and report the bugs. Download <a href="http://nightly.mozilla.org/" target="_blank">Nightly</a> and <a href="http://www.mozilla.org/en-US/firefox/channel/#aurora">Aurora</a>. So well, lets get back to where we were headed.</p>
+                <img src="http://1.bp.blogspot.com/-TE0_2DrIiAI/UZ9MfUuKBRI/AAAAAAAAAKY/QVYW3unDY0I/s1600/Browsers.PNG" alt="Cannot open webpage">
+                <p style="text-align:justify;">So what is Style ? It is something that defines the look and feel of the website. You can set the background color, the font sizes, the font colours and so on. These attributes are called styles and this can be done using CSS or Cascaded Style Sheet. CSS is a set of instructions given to the browser to display particular elements of a webpage in a particular fashion. So why wait, Lets dive in.</p>
+                <br>
+                <p style="text-align:justify;">The CSS Syntax has 2 main parts, a selector and declarations. A selector is basically the element that you'd be using in the HTML document, and a declaration consists of a property and the value. The following image will make things clear.</p>
+                <img src="http://1.bp.blogspot.com/-asrihN-avEI/UZ9PTd34cBI/AAAAAAAAAKo/8dQNxRJN_Mc/s1600/CSS.PNG">
+                <p style="text-align:justify;">So this is an example of setting paragraph properties</p>
+                <br>
+                <code>
+                    p<br>
+                     {<br>
+                        text-align:center;<br>
+                        /*This is another comment*/<br>
+                        color:red;<br>
+                        font-family:arial;<br>
+                    }<br>
+                </code>
+                <p style="text-align:justify;">This particular style tells that everything in the document placed in between paragraph tags will have a red color font and is of Arial font.</p>
+                <img src="http://2.bp.blogspot.com/-rfoh9ormdQY/UZ9TJcndSwI/AAAAAAAAAK4/jvlO2HYqw8E/s1600/previewred.PNG" alt="Cannot display image">
+                <p style="text-align:justify;">So every style context that you want to be using is always placed in between <style> & </style> tags as you can see in the screen above. Experiment with the layouts, set colors to headings of different sizes as an example for you to try out. Notice that every particular declaration that you put in between the curly braces '{' has to be ended with a semicolon. The best part about thimble is that it will even highlight the lines in case you've written a wrong statement. Experiment with text-align, color, font-family, font-size as of today and create a very colourful webpage. Once you publish, share the link in the comments.</p>
+                <br>
+                <p style="text-align:justify;">So all the best for today. Tomorrow we'll be seeing about different methods to call colours and a little more advancement onto using CSS in Thimble.</p>
+                <hr>
+                <!--End of page-->
+                <h2 class="content-subhead" id="day9">Day 9 -Adding a little more style and color</h2>
+                <p>In addition to setting style for particular HTML elements, CSS also allows you to set the style to particular elements by selecting it as "id" and "class"</p>
+                <br>
+                <p>The "id" selector is used to specify style to a single, unique element. To define an "id" for a particular element we use the '#'. For a paragraph with the"id" as "para1" for which we want to give a particular style, we write a code as follows.</p>
+                <code>
+                    &lt;!doctype html&lt;<br>
+                    &lt;html&gt;<br>
+                    &lt;style&gt;<br>
+                    #para1<br>
+                    {<br>
+                        text-align:left;<br>
+                        color:blue;<br>
+                        font-size:24px;<br>
+                        font-style:oblique;<br>
+                    }<br>
+                p<br>
+                    {<br>
+                        color:green;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                &lt;head&gt;<br>
+    &lt;title&gt;Your Awesome Webpage&lt;/title&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+    &gt;p id="para1"&lt;Make something amazing with the web&gt;/p&lt;<br>
+    &gt;p&lt;Hello. The above paragraph is styled&gt;/p&lt;<br>
+  &gt;/body&lt;
+&gt;/html&lt; 
+                </code>    
+                <p>This means that anything defined under a particular "id" will undergo the style as defined under #para1</p>
+                <img src="http://3.bp.blogspot.com/-0VGjRH6Xh1w/UaCDEG1MAZI/AAAAAAAAALI/UwZRx4131tM/s1600/CSSID.PNG" alt="Cannot display">
+                <p>This "id" method is applicable and its specific, If you notice the code, all default paragraphs have a color green but the same paragraph with an "id" tag has a higher preference and will only follow the style laws defined under the id of #para1.</p>
+                <br>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference?redirectlocale=en-US&redirectslug=CSS%2FCSS_Reference" target="_blank">This source</a> from Mozilla is very important and gives you all the possible styles along with a default syntax of how to write the code and is very helpful for all web developers. I suggest you bookmark it.</p>
+                <br>
+                <p>Another way to do this is by specifying a class, this method is generally used to specify required style for any element and the style is used. Suppose I want to center align my heading and my paragraph but instead of writing the style for both heading tag and paragraph tag, specifying one class (similar to type) and using it will be the same.</p>
+                <img src="http://3.bp.blogspot.com/-JMnR3NiGDn4/UaCFCdzVEGI/AAAAAAAAALY/S_ZMSqEmT34/s1600/ClassCSS.PNG" alt="No display">
+                
                 </div>
+                
             </div>
         </div>
 
