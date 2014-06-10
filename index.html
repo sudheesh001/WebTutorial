@@ -427,13 +427,13 @@ In the next day's lesson we'll take care about how to make ordered lists (i.e. 1
                 <p style="text-align:justify;">So this is an example of setting paragraph properties</p>
                 <br>
                 <code>
-                    p
-                     {
-                        text-align:center;
-                        /*This is another comment*/
-                        color:red;
-                        font-family:arial;
-                    } 
+                    p<br>
+                     {<br>
+                        text-align:center;<br>
+                        /*This is another comment*/<br>
+                        color:red;<br>
+                        font-family:arial;<br>
+                    }<br>
                 </code>
                 <p style="text-align:justify;">This particular style tells that everything in the document placed in between paragraph tags will have a red color font and is of Arial font.</p>
                 <img src="http://2.bp.blogspot.com/-rfoh9ormdQY/UZ9TJcndSwI/AAAAAAAAAK4/jvlO2HYqw8E/s1600/previewred.PNG" alt="Cannot display image">
@@ -442,8 +442,44 @@ In the next day's lesson we'll take care about how to make ordered lists (i.e. 1
                 <p style="text-align:justify;">So all the best for today. Tomorrow we'll be seeing about different methods to call colours and a little more advancement onto using CSS in Thimble.</p>
                 <hr>
                 <!--End of page-->
+                <h2 class="content-subhead" id="day9">Day 9 -Adding a little more style and color</h2>
+                <p>In addition to setting style for particular HTML elements, CSS also allows you to set the style to particular elements by selecting it as "id" and "class"</p>
+                <br>
+                <p>The "id" selector is used to specify style to a single, unique element. To define an "id" for a particular element we use the '#'. For a paragraph with the"id" as "para1" for which we want to give a particular style, we write a code as follows.</p>
+                <code>
+                    &lt;!doctype html&lt;<br>
+                    &lt;html&gt;<br>
+                    &lt;style&gt;<br>
+                    #para1<br>
+                    {<br>
+                        text-align:left;<br>
+                        color:blue;<br>
+                        font-size:24px;<br>
+                        font-style:oblique;<br>
+                    }<br>
+                p<br>
+                    {<br>
+                        color:green;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                &lt;head&gt;<br>
+    &lt;title&gt;Your Awesome Webpage&lt;/title&gt;<br>
+    &lt;/head&gt;<br>
+    &lt;body&gt;<br>
+    &gt;p id="para1"&lt;Make something amazing with the web&gt;/p&lt;<br>
+    &gt;p&lt;Hello. The above paragraph is styled&gt;/p&lt;<br>
+  &gt;/body&lt;
+&gt;/html&lt; 
+                </code>    
+                <p>This means that anything defined under a particular "id" will undergo the style as defined under #para1</p>
+                <img src="http://3.bp.blogspot.com/-0VGjRH6Xh1w/UaCDEG1MAZI/AAAAAAAAALI/UwZRx4131tM/s1600/CSSID.PNG" alt="Cannot display">
+                <p>This "id" method is applicable and its specific, If you notice the code, all default paragraphs have a color green but the same paragraph with an "id" tag has a higher preference and will only follow the style laws defined under the id of #para1.</p>
+                <br>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference?redirectlocale=en-US&redirectslug=CSS%2FCSS_Reference" target="_blank">This source</a> from Mozilla is very important and gives you all the possible styles along with a default syntax of how to write the code and is very helpful for all web developers. I suggest you bookmark it.</p>
+                <br>
+                <p>Another way to do this is by specifying a class, this method is generally used to specify required style for any element and the style is used. Suppose I want to center align my heading and my paragraph but instead of writing the style for both heading tag and paragraph tag, specifying one class (similar to type) and using it will be the same.</p>
+                <img src="http://3.bp.blogspot.com/-JMnR3NiGDn4/UaCFCdzVEGI/AAAAAAAAALY/S_ZMSqEmT34/s1600/ClassCSS.PNG" alt="No display">
                 
-                    
                 </div>
                 
             </div>
