@@ -479,7 +479,67 @@ In the next day's lesson we'll take care about how to make ordered lists (i.e. 1
                 <br>
                 <p>Another way to do this is by specifying a class, this method is generally used to specify required style for any element and the style is used. Suppose I want to center align my heading and my paragraph but instead of writing the style for both heading tag and paragraph tag, specifying one class (similar to type) and using it will be the same.</p>
                 <img src="http://3.bp.blogspot.com/-JMnR3NiGDn4/UaCFCdzVEGI/AAAAAAAAALY/S_ZMSqEmT34/s1600/ClassCSS.PNG" alt="No display">
-                
+                <p style="text-align:justify;">The code shown above is:</p><br>
+                <code>
+                    &lt;!doctype html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;style&gt;<br>
+                    .center<br>
+                    {<br>
+                    text-align:center;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Your Awesome Webpage&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;p class="center"&gt;Make something amazing with the web&lt;/p&gt;<br>
+                    &lt;p class="center"&gt;Hello. The above paragraph is styled&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+                <br>
+                <p>The usage is simple, the code in the <body> can be translated into English as, The paragraph placed in between the following paragraph tag is styled by a center class as specified. the keyword to use is class and every class has to be mentioned with a '.' before the name of the class. Easy right ? The only condition is that the name that you give should not start with a number. The class name starting with a number is only supported in Internet Explorer and Rockmelt and not in any other browser.</p>
+                <p>So now about background colors, There are 3 types of color types, the Red Green Blue Alpha (RGBA) generally referred to as RGB color, a Hue Saturation Lightness (HSL) color model and the HEX color model. As we all know, a combination of RGB colours give a new colour, so instead of specifying a color like Green or Red, if you want some specific colour, you can also specify it in the style as</p>
+                <code>
+                    &lt;!doctype html&gt;<br>
+&lt;html&gt;<br>
+  &lt;style&gt;<br>
+    .center<br>
+    {<br>
+      text-align:center;<br>
+      color: rgb(160,10,55);<br>
+    }<br>
+    .left<br>
+    {<br>
+      text-align:left;<br>
+      color: rgba(101,165,47,100);<br>
+    }<br>
+    .hexcol<br>
+    {<br>
+      color:#FF00FF;<br>
+    }<br>
+  &lt;/style&gt;<br>
+  &lt;head&gt;<br>
+    &lt;title&gt;Your Awesome Webpage&lt;/title&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+    &lt;p class="center"&gt;Make something amazing with the web&lt;/p&gt;<br>
+    &lt;p class="left"&gt;Hello. The above paragraph is styled&lt;/p&gt;<br>
+    &lt;p class="hexcol"&gt;This colours on Hex mode&lt;/p&gt;<br>
+  &lt;/body&gt;<br>
+&lt;/html&gt;
+                </code>
+                <img src="http://4.bp.blogspot.com/-GW_G3BJPWHs/UaCMLq1sCZI/AAAAAAAAALo/-arAtIOlMBg/s1600/colors.PNG" alt="Cannot display image">
+                <br>
+                <p style="text-align:justify;">The three values seperated by commas in the RGB, RGBA declarations are called parameters and contribute to rgb(red value, green value, blue value); Every RGB value can be converted to HEX values, using a HEX value is always better since it reduces processing time and is also smaller, thus reducing the size of the HTML file. Reducing the size of a file is very important because it reduces the bandwidth consumption which is very important in many countries. The conversion tables from RGB to HEX are as follows.</p>
+                <img src="http://1.bp.blogspot.com/-emd2zfiHAnw/UaCNRsueHqI/AAAAAAAAAMA/LHkSrOVIIbI/s640/color1.PNG" alt="Can't display image">
+                <br>
+                <img src="http://3.bp.blogspot.com/-bw-1JdZ23ss/UaCNRxmFf8I/AAAAAAAAAL8/xrY1ZubvPOk/s640/color2.PNG" alt="Cannot display webpage">
+                <br>
+                <img src="http://4.bp.blogspot.com/--Ac4XS3ppC0/UaCNRvaGiNI/AAAAAAAAAL4/XmBWJNCe9D8/s640/color3.PNG" alt="Cannot display webpage">
+                <br>
+                <p>So now add colors to your webpage and design a very colourful webpage using Thimble.</p>
                 </div>
                 
             </div>
