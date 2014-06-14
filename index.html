@@ -540,7 +540,52 @@ In the next day's lesson we'll take care about how to make ordered lists (i.e. 1
                 <img src="http://4.bp.blogspot.com/--Ac4XS3ppC0/UaCNRvaGiNI/AAAAAAAAAL4/XmBWJNCe9D8/s640/color3.PNG" alt="Cannot display webpage">
                 <br>
                 <p>So now add colors to your webpage and design a very colourful webpage using Thimble.</p>
+                <hr>
+                 <!--End of page-->
+                 <h2 class="content-subheaf" id="day10">Day 10- Backgrounds Using CSS</h2>
+                 <br>
+                 <p style="text-align:justify;">So every webpage needs a background so that their webpages look really beautiful. Today we'll be looking at adding backgrounds to HTML documents using CSS and we'll also look at a few properties of backgrounds. So lets get started.</p>
+                 <p style="text-align:justify;"> CSS background properties are used to define the background effects of an element. CSS properties used for background effects:</p>
+                 <ul>
+                     <li> background-color</li>
+                     <li>background-image</li>
+                     <li>background-repeat</li>
+                     <li>background-attachment</li>
+                     <li>background-position</li>
+                 </ul>
+                 <p style="text-align:justify;">These properties are self explanatory, the background-color deals with giving a specific color to a particular webpage, like the image below.</p>
+                 <img src="http://3.bp.blogspot.com/-HQ-C9ys7mk4/UaHMpNNeAbI/AAAAAAAAAMY/b0GNoWMpVIo/s1600/backgroundcolor.PNG" alt ="Cannot display image">
+                 <p style="text-align:justify;">A background image is used to set an image as a background, it's syntax is slightly different and is written as follows<code>background-image:url('&lt;image source&gt;');</code></p>
+                 <img src="http://2.bp.blogspot.com/-Gqdbj4BGWG4/UaHNnPyQEYI/AAAAAAAAAMo/jCzf_sM3ZhM/s1600/backgroundHTML.PNG">
+                 <p style="text-align:justify;">But if you see in the image, I don't like the color of the visited link, it doesn't match in with the background, so I want to make the color of a link bright. A Link has 4 properties which are set as follows</p>
+                 <code>
+                      a:link {color:#FF0000;}      /* un visited link */<br>
+                      a:visited {color:#00FF00;}  /* visited link */<br>
+                      a:hover {color:#FF00FF;}  /* mouse over link */<br>
+                      a:active {color:#0000FF;}  /* selected link */<br>
+
+
+                 </code>
+                 <p style="text-align:justify;">This code gives me a bright green color 'link' and yes I feel happier now.</p>
+                 <img srx="http://2.bp.blogspot.com/-TZID1TpBV_c/UaHOyBGSsbI/AAAAAAAAAM4/ppcCyr7PoN8/s1600/colorshift.PNG">
+                 <p style="text-align:justify">The color changes and the screen now looks like this.</p>
+                 <br>
+                 <p style="text-align:justify;">background-repeat property is used in cases where an image has to be repeated throughout the webpage, maybe some gradient image. By default this property repeats the image both horizontally and vertically and sometimes makes a webpage look really bad, like this one below.</p>
+                 <img src="http://4.bp.blogspot.com/-jsnWrBksfvc/UaHPxclwg1I/AAAAAAAAANI/ZxjcggW7wPQ/s1600/repeatCSS.PNG" alt="Cannot display image">
+                 <p style="text-align:justify;">Sometimes an image has to be just repeated horizontally or vertically, This is the reason why we have a background-repeat property, the property is used as follows, but note that you should use only one of them and not both. <b>Try to see what happens when you use both of them.</b></p>
+                 <code>
+                      background-repeat:repeat-x;/*To repeat image in 'x' axis*/<br>
+                      background-repeat:repeat-y;/*To repeat image in 'y' axis*/<br>
+                 </code>
+                 <p style="text-align:justify;">With repeat-x; we get the following image</p>
+                 <img src="http://2.bp.blogspot.com/-KDAW4v4pdqw/UaHREf4iCXI/AAAAAAAAANY/8L9MMjWsxSg/s1600/withrepeat.PNG" alt="Can't display webpage">
+                 <p style="text-align:justify;"> background-position is a very important property but before this property is used, the<br> 
+                    <code>background-repeat: no-repeat;</code><br>
+has to be set to a no-repeat. Then the background image that you've requested for by the document will now be set in the position you've requested the webpage to put at.</p>
+                <img src="http://1.bp.blogspot.com/-MekQqs1rGP8/UaHSf57ADoI/AAAAAAAAANo/g1RiMVnUadY/s1600/setposition.PNG">
                 </div>
+               
+                
                 
             </div>
         </div>
