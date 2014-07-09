@@ -43,6 +43,7 @@
                         <li><a href="#day9">Day 9</a></li>
                         <li><a href="#day10">Day 10</a></li>
                         <li><a href="#day12">Day 12</a></li>
+                        <li><a href="#day13">Day 13</a></li>
                 </div>
             </div>
 
@@ -599,9 +600,71 @@ In the next day's lesson we'll take care about how to make ordered lists (i.e. 1
                  </ul>
                        <p style="text-align: justify;">Today there won't be any post regarding HTML as such, Day 13 we'll be starting off with basics of Javascript. <b>The next quiz on Day 21 will be on HTML (20%) , CSS (20%) and Javascript (60%).</b> All those who have scored below 6, Go through the information from Day 2 - Day 11 and do get back to one of us, either <a href="https://www.facebook.com/sudheesh001">Me</a> or <a href="https://www.facebook.com/manoj.reddy.10">Manoj Reddy</a>.</p>
                        <p style="text-align: justify;">All the best and Congratulations to everyone.</p>
-                       
-                       
-                  
+                       <hr>
+                       <!--end of page--->
+                  <h2 class="content-subhead" id="day13">Day 13. Using forms.</h2>
+                  <p style="text-align: justify;">You might have encountered  registration forms whenever you are signing into a social networking site or any other forums. So how to create this forums. Let us discuss creation of forums using HTML. What does form consists of. Text fields to enter details, password fields, radio buttons, check boxes, drop down liststs,text blocks to write any comments . We need to create form in our HTML page between &lt;form&gt; &lt;/form&gt; tags.</p>
+                  <p style="text-align: justify;">HTML Forms are used to select different kinds of user input. HTML forms are used to pass data to a server. An HTML form can contain input elements like text fields, checkboxes, radio-buttons, submit buttons and more. A form can also contain select lists, textarea, fieldset, legend, and label elements.</p>
+                  <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br>
+                          &lt;h1&gt; This is a Form below &lt;/h1&gt;<br>
+                        &lt;form action="" &gt;<br>
+                        Full name:  &lt;input type="text" name="fullname" value="enter your name"&gt;&lt;br&gt;&lt;br&gt;<br>
+                        &lt;/form&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                      
+                      
+                  </code>
+                  <p style="text-align: justify">The result of the above code is as follows.</p>
+                  <img src="http://4.bp.blogspot.com/-6TiYHlACA4o/UaW9ZHHCF3I/AAAAAAAAAN4/beF_pipTfAs/s640/form1.PNG">
+                  <p style="text-lign: justify;"> Lets try to understand what is happening in the form tag. The action="" says that, the information in this has to be sent to "" server, since we don't have a server with a code to accept the information to store as a database (similar to how you make your excel sheets) we leave it blank. In the form it says, Full name should be a text entry type and in the database this value which is entered will be stored under the "fullname" column. It is similar to how you store all names under one column when you make an excel sheet of your friends and their phone numbers. A small drawback of this is that, the value="enter your name" tells the user what to input here but as you must have seen in many registration sites, when you click on some text box with text like this, it automatically disappears allowing you to input, but in this case, you have to manually select enter your name present in the box, press backspace or delete and type your name. A way to solve this is by using something called a placeholder, this makes sure that, as you click on the box, the data that is present in the box is automatically removed. So a small update to the code is as follows. You'll also notice that the text becomes lighter.</p>
+                  <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br>
+                          &lt;h1&gt; This is a Form below &lt;/h1&gt;<br>
+                        &lt;form action="" &gt;<br>
+                        Full name:  &lt;input type="text" name="fullname" placeholder="enter your name"&gt;&lt;br&gt;&lt;br&gt;<br>
+                        &lt;/form&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                      
+                      
+                  </code>
+                 <p style="text-align: justify">What about passwords ? They are used very widely in forms, like login forms or register forms. For this we need to update the above code from <code>type="text"</code> to <code>type="password"</code> and obviously update the name= to a new columns name, as wanted in your database.</p>
+                 <img src="http://2.bp.blogspot.com/-qj8doRoOoXo/UaXAKBGD-YI/AAAAAAAAAOI/q4e6L1VnFl0/s640/passwordform.PNG">
+                 <p style="text-align: justify">When you try to input into this type of a form, it changes to masked characters by replacing whatever you type with dots or asterisks(*) like this.</p>
+                 <img src="http://1.bp.blogspot.com/--aLwVb4s4_E/UaXAg7mMPHI/AAAAAAAAAOQ/o_23vYeP8S4/s1600/pass.PNG">
+                 <p style="text-align: justify"><code>&gt;input type="radio"&lt;</code> defines a radio button. Radio buttons let a user select ONLY ONE of a limited number of choices: This is generally used when you are mentioning your gender in most fields or a Yes or No, Its also used in online quizzes with single choice.</p>
+                 <img src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                 <code>
+                    &lt;form action="" &gt;<br>
+                    &lt;form&gt;<br>
+                    &lt;input type="radio" name="sex" value="male"&gt;Male&lt;br&gt;<br>
+                    &lt;input type="radio" name="sex" value="female"&gt;Female&lt;br&gt;<br>
+                    &lt;/form&gt;&lt;br&gt;&lt;br&gt;<br>
+                    &lt;/form&gt;<br>
+                     
+                 </code>
+                 <p style="text-align: justify"><code>&lt;input type="checkbox"&gt;</code> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices. This is similar to giving a quiz with multiple correct answers. It is used as follows.</p>
+                 <img src="http://2.bp.blogspot.com/-OI7Y99J-RUQ/UaXFc-0CETI/AAAAAAAAAOw/zH8SG1F11Kk/s640/checkboxes.PNG">
+                 <p style="text-align: justify"> The above sends this data to the browser column of the database running on the sever. So now that we've covered how creation of a form, the last element to add is a send button. That is done as follows.</p>
+                 <code>
+                    &lt;form name="input" action="server_file.asp"&gt;<br>
+                    &lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;/form&gt;<br> 
+                 </code>
+                 <p style="text-align: justify">So now your form is complete, you can now use style to make it more beautiful. Let us now look at iframes, An iframe is used to display a web page within a web page. This is generally used to place your form onto other websites. Instead of re-creating the web form again, you can just place a frame to the place where your form is hosted on the website. The syntax is easy too.</p>
+                 <code>
+                     &lt;iframe src="URL" width="780" height="800"&gt;&lt;/iframe&gt;
+
+
+                 </code>
+                 <p>So there you go with todays learning. Advance the webpage layouts and develop registration forms.</p>
+ 
                 </div>
               
                 
